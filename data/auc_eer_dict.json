@@ -1,0 +1,88 @@
+{
+    "All": [
+        {
+            "Model": "AASIST",
+            "ENEER": 28.16,
+            "ENAUC": 0.7806,
+            "CNEER": 51.88,
+            "CNAUC": 0.4568
+        },
+        {
+            "Model": "RawNet2",
+            "ENEER": 25.22,
+            "ENAUC": 0.8204,
+            "CNEER": 33.23,
+            "CNAUC": 0.7207
+        },
+        {
+            "Model": "RawBoost",
+            "ENEER": 23.48,
+            "ENAUC": 0.8338,
+            "CNEER": 26.55,
+            "CNAUC": 0.8055
+        },
+        {
+            "Model": "OC-Softmax",
+            "ENEER": 32.37,
+            "ENAUC": 0.7081,
+            "CNEER": 28.86,
+            "CNAUC": 0.7682
+        },
+        {
+            "Model": "RawGAT-ST",
+            "ENEER": 25.63,
+            "ENAUC": 0.8234,
+            "CNEER": 35.49,
+            "CNAUC": 0.6963
+        },
+        {
+            "Model": "CLAD",
+            "ENEER": 20.0,
+            "ENAUC": 0.8851,
+            "CNEER": 33.05,
+            "CNAUC": 0.7329
+        },
+        {
+            "Model": "Res-TSSDNet",
+            "ENEER": 50.01,
+            "ENAUC": 0.4991,
+            "CNEER": 49.91,
+            "CNAUC": 0.5004
+        },
+        {
+            "Model": "RawNet2-Vocoder",
+            "ENEER": 27.54,
+            "ENAUC": 0.7871,
+            "CNEER": 37.01,
+            "CNAUC": 0.6516
+        },
+        {
+            "Model": "AASIST2",
+            "ENEER": 13.5,
+            "ENAUC": 0.9322,
+            "CNEER": 13.54,
+            "CNAUC": 0.9286
+        },
+        {
+            "Model": "Raw PC-DARTS",
+            "ENEER": 27.93,
+            "ENAUC": 0.7329,
+            "CNEER": 29.99,
+            "CNAUC": 0.7182
+        },
+        {
+            "Model": "RawBMamba",
+            "ENEER": 27.43,
+            "ENAUC": 0.7922,
+            "CNEER": 32.48,
+            "CNAUC": 0.7183
+        },
+        {
+            "Model": "SAMO",
+            "ENEER": 25.57,
+            "ENAUC": 0.7864,
+            "CNEER": 48.72,
+            "CNAUC": 0.4847
+        }
+    ]
+}

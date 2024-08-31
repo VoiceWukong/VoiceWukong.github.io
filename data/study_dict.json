@@ -1,0 +1,298 @@
+{
+    "All": [
+        {
+            "Model": "AASIST2",
+            "ENFAR": 9.52,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 9.55
+        },
+        {
+            "Model": "AASIST2",
+            "ENFAR": 14.6,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 27.17
+        },
+        {
+            "Model": "AASIST2",
+            "ENFAR": 18.29,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 25.64
+        },
+        {
+            "Model": "RawBoost",
+            "ENFAR": 23.81,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 14.2
+        },
+        {
+            "Model": "RawBoost",
+            "ENFAR": 26.54,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 47.28
+        },
+        {
+            "Model": "RawBoost",
+            "ENFAR": 24.74,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 47.44
+        },
+        {
+            "Model": "OC-Softmax",
+            "ENFAR": 30.48,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 22.73
+        },
+        {
+            "Model": "OC-Softmax",
+            "ENFAR": 32.21,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 40.76
+        },
+        {
+            "Model": "OC-Softmax",
+            "ENFAR": 35.54,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 48.72
+        },
+        {
+            "Model": "CLAD",
+            "ENFAR": 17.62,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 33.75
+        },
+        {
+            "Model": "CLAD",
+            "ENFAR": 22.56,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 41.03
+        },
+        {
+            "Model": "CLAD",
+            "ENFAR": 24.39,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 34.62
+        },
+        {
+            "Model": "RawNet2",
+            "ENFAR": 25.71,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 29.2
+        },
+        {
+            "Model": "RawNet2",
+            "ENFAR": 26.48,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 46.2
+        },
+        {
+            "Model": "RawNet2",
+            "ENFAR": 29.27,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 48.29
+        },
+        {
+            "Model": "RawBMamba",
+            "ENFAR": 26.19,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 30.91
+        },
+        {
+            "Model": "RawBMamba",
+            "ENFAR": 29.07,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 44.02
+        },
+        {
+            "Model": "RawBMamba",
+            "ENFAR": 29.97,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 35.9
+        },
+        {
+            "Model": "Raw PC-DARTS",
+            "ENFAR": 27.62,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 21.82
+        },
+        {
+            "Model": "Raw PC-DARTS",
+            "ENFAR": 28.59,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 44.84
+        },
+        {
+            "Model": "Raw PC-DARTS",
+            "ENFAR": 32.75,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 49.57
+        },
+        {
+            "Model": "RawGAT-ST",
+            "ENFAR": 24.05,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 33.18
+        },
+        {
+            "Model": "RawGAT-ST",
+            "ENFAR": 26.9,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 47.28
+        },
+        {
+            "Model": "RawGAT-ST",
+            "ENFAR": 26.13,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 45.73
+        },
+        {
+            "Model": "RawNet2-Vocoder",
+            "ENFAR": 26.43,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 29.32
+        },
+        {
+            "Model": "RawNet2-Vocoder",
+            "ENFAR": 29.07,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 50.82
+        },
+        {
+            "Model": "RawNet2-Vocoder",
+            "ENFAR": 30.14,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 48.29
+        },
+        {
+            "Model": "Res-TSSDNet",
+            "ENFAR": 42.86,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 48.3
+        },
+        {
+            "Model": "Res-TSSDNet",
+            "ENFAR": 51.69,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 48.91
+        },
+        {
+            "Model": "Res-TSSDNet",
+            "ENFAR": 54.36,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 45.3
+        },
+        {
+            "Model": "SAMO",
+            "ENFAR": 24.76,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 56.02
+        },
+        {
+            "Model": "SAMO",
+            "ENFAR": 27.2,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 45.92
+        },
+        {
+            "Model": "SAMO",
+            "ENFAR": 28.92,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 33.33
+        },
+        {
+            "Model": "AASIST",
+            "ENFAR": 28.33,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 57.84
+        },
+        {
+            "Model": "AASIST",
+            "ENFAR": 28.65,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 47.01
+        },
+        {
+            "Model": "AASIST",
+            "ENFAR": 30.14,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 33.76
+        },
+        {
+            "Model": "Human",
+            "ENFAR": 18.97,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 4.2
+        },
+        {
+            "Model": "Human",
+            "ENFAR": 51.67,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 50.54
+        },
+        {
+            "Model": "Human",
+            "ENFAR": 82.64,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 87.61
+        },
+        {
+            "Model": "Qwen-audio2",
+            "ENFAR": 31.67,
+            "ENLevel": "0",
+            "ZHLevel": "0",
+            "ZHFAR": 34.87
+        },
+        {
+            "Model": "Qwen-audio2",
+            "ENFAR": 32.15,
+            "ENLevel": "1",
+            "ZHLevel": "1",
+            "ZHFAR": 28.80
+        },
+        {
+            "Model": "Qwen-audio2",
+            "ENFAR": 32.06,
+            "ENLevel": "2",
+            "ZHLevel": "2",
+            "ZHFAR": 28.83
+        }
+    ]
+}

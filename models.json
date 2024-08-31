@@ -1,0 +1,58 @@
+[
+  {
+    "model": "AASIST",
+    "link": "https://github.com/clovaai/aasist.git"
+  },
+  {
+    "model": "AASIST2",
+    "link": "https://github.com/TakHemlata/SSL_Anti-spoofing.git"
+  },
+  {
+    "model": "RawNet2",
+    "link": "https://github.com/eurecom-asp/rawnet2-antispoofing.git"
+  },
+  {
+    "model": "RawNet2-Vocoder",
+    "link": "https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts.git"
+  },
+  {
+    "model": "RawBoost",
+    "link": "https://github.com/TakHemlata/RawBoost-antispoofing.git"
+  },
+  {
+    "model": "OC-Softmax",
+    "link": "https://github.com/yzyouzhang/AIR-ASVspoof.git"
+  },
+  {
+    "model": "Raw PC-DARTS",
+    "link": "https://github.com/eurecom-asp/raw-pc-darts-anti-spoofing.git"
+  },
+  {
+    "model": "CLAD",
+    "link": "https://github.com/CLAD23/CLAD.git"
+  },
+  {
+    "model": "RawGAT-ST",
+    "link": "https://github.com/eurecom-asp/RawGAT-ST-antispoofing.git"
+  },
+  {
+    "model": "SAMO",
+    "link": "https://github.com/sivannavis/samo.git"
+  },
+  {
+    "model": "Res-TSSDNet",
+    "link": "https://github.com/ghua-ac/end-to-end-synthetic-speech-detection.git"
+  },
+  {
+    "model": "RawBMamba",
+    "link": "https://github.com/cyjie429/RawBMamba.git"
+  },
+  {
+    "model": "Human",
+    "link": "#"
+  },
+  {
+    "model": "Qwen-audio2",
+    "link": "http://qwenlm.github.io/blog/qwen2-audio/"
+  }
+]
