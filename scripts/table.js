@@ -349,6 +349,7 @@ function toggleMetricsDisplay() {
     // Notice1.style.display = 'none';
     metricsDiv.style.display = 'none';
   }
+}
  
 toggleMetricsDisplay();
 
