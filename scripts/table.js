@@ -1,7 +1,7 @@
 const tableEnglish = document.getElementById("english-result");
 const tableChinese = document.getElementById("chinese-result");
 
-async function displayData1(data, metric, metricName,metricName2) {
+async function displayData1(data, metric, metricName, metricName2) {
   const models = await fetch("models.json").then((resp) => resp.json());
   const flattened = flatten(data);
   [...document.querySelectorAll("[data-metric1]")].forEach(
@@ -292,7 +292,7 @@ btnMethod.addEventListener("click", () => {
   fetch("data/auc_eer_dict.json ")
     .then((resp) => resp.json())
     .then((data) => {
-      displayData(data,'AUC','EER (%)');
+      displayData(data, 'AUC', 'EER (%)');
     });
 });
 const ENACC = "enacc"
@@ -301,7 +301,7 @@ btnAcc.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      displayDataacc(data, CNACC,ENACC,"Variant", "ACC (%)");
+      displayDataacc(data, CNACC, ENACC, "Variant", "ACC (%)");
     });
 });
 const ENF1 = "enf1"
@@ -311,7 +311,7 @@ btnFscore.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      displayDataacc(data,CNF1,ENF1, "Variant", "F1 Score (%)");
+      displayDataacc(data, CNF1, ENF1, "Variant", "F1 Score (%)");
     });
 });
 
@@ -338,10 +338,10 @@ btnUser.addEventListener("click", () => {
   fetch("data/study_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      displayDataacc(data, ZHFAR,ENFAR, "Level", "FAR (%)");
+      displayDataacc(data, ZHFAR, ENFAR, "Level", "FAR (%)");
     });
 });
-  
+
 // btnManipulation.addEventListener("click", () => {
 //   fetch("data/data_context.json")
 //     .then((resp) => resp.json())
@@ -368,22 +368,22 @@ function toggleMetricsDisplay() {
   if (btnManipulation.checked) {
     metricsDiv.style.display = 'block';
     btnAcc.checked = true;
-    Notice1.style.display = 'block';
+    // Notice1.style.display = 'block';
     fetch("data/manipulation_dict.json")
       .then((resp) => resp.json())
       .then((data) => {
         displayDataacc(data, CNACC, ENACC, 'Variant', 'ACC (%)');
       });
   } else {
-    Notice1.style.display = 'none';
+    // Notice1.style.display = 'none';
     metricsDiv.style.display = 'none';
   }
-  if (btnUser.checked) {
-    Notice2.style.display = 'block'
-  }
-  else {
-    Notice2.style.display = 'none'
-  }
+  // if (btnUser.checked) {
+  //   Notice2.style.display = 'block'
+  // }
+  // else {
+  //   Notice2.style.display = 'none'
+  // }
 }
 // Initial check
 toggleMetricsDisplay();
@@ -398,6 +398,6 @@ overallRadios.forEach(radio => {
 fetch("data/auc_eer_dict.json")
   .then((resp) => resp.json())
   .then((data) => {
-    displayData(data,'AUC','EER (%)');
+    displayData(data, 'AUC', 'EER (%)');
   });
 
