@@ -74,7 +74,7 @@ async function displayData(data, metricName, metricName2) {
     thead.innerHTML = "";
     tbody.innerHTML = "";
 
-    // 添加表头标题
+
     const headerRow = document.createElement("tr");
     const thIndex = document.createElement("th");
     thIndex.textContent = "Rank";
@@ -128,11 +128,10 @@ async function displayData(data, metricName, metricName2) {
     tbody.innerHTML = "";
   }
 
-  // 清除表格内容
+
   clearTable(tableEnglish);
   clearTable(tableChinese);
 
-  // 重新渲染表格内容
   display(tableEnglish, ["enauc", "eneer"], "enauc");
   display(tableChinese, ["cnauc", "cneer"], "cnauc");
 }
@@ -143,7 +142,7 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
   const models = await fetch("models.json").then((resp) => resp.json());
   let flattened;
   if (metric1.includes('zh')) {
-    // console.log('yandoit')
+
     flattened = flattlevel(data)
 
   }
@@ -169,7 +168,7 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
     const tbody = el.querySelector("tbody");
     tbody.innerHTML = "";
 
-    // 根据筛选条件过滤数据
+
     const filteredData = flattened.filter(row => {
       return Object.keys(filter).every(key => row[key] === filter[key]);
     });
@@ -206,18 +205,18 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
     const thead = el.querySelector("thead");
     const tbody = el.querySelector("tbody");
 
-    // 清除之前的设置
+
     thead.innerHTML = "";
     tbody.innerHTML = "";
 
     const headerRow = document.createElement("tr");
 
-    // 添加索引列头
+
     const thIndex = document.createElement("th");
     thIndex.textContent = "Rank";
     headerRow.appendChild(thIndex);
 
-    // 添加其他列头并设置下拉框
+
     for (const [i, col] of ["model", ...cols].entries()) {
       const th = document.createElement("th");
       if (col === "model") {
@@ -228,11 +227,11 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
         th.textContent = metricName2;
       }
 
-      if (i === 0 || i === 1) { // 仅为第一列和第二列添加下拉框
+      if (i === 0 || i === 1) { 
         const select = document.createElement("select");
         select.innerHTML = `<option value="">All</option>`;
 
-        // 获取列的唯一值
+
         const uniqueValues = [...new Set(flattened.map(row => row[col]))];
         uniqueValues.forEach(value => {
           const option = document.createElement("option");
@@ -257,7 +256,6 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
 
     thead.appendChild(headerRow);
 
-    // 初始显示所有内容
     display(el, cols, sort_key);
   }
   function clearTable(el) {
@@ -267,10 +265,10 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
     tbody.innerHTML = "";
   }
 
-  // 清除表格内容
+
   clearTable(tableEnglish);
   clearTable(tableChinese);
-  // 调用 setupTable 函数来初始化表格
+
   if (metric1.includes('zh')) {
     setupTable(tableChinese, ["zhlevel", metric1], metric1);
     setupTable(tableEnglish, ["enlevel", metric2], metric2);
@@ -280,13 +278,7 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
     setupTable(tableEnglish, ["variant", metric2], metric2);
   }
 }
-// btnMethod.addEventListener("click", () => {
-//   fetch("data/data_method.json")
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       displayData(data, "method", "Method",'ccc','ddd');
-//     });
-// });
+
 
 btnMethod.addEventListener("click", () => {
   fetch("data/auc_eer_dict.json ")
@@ -342,28 +334,7 @@ btnUser.addEventListener("click", () => {
     });
 });
 
-// btnManipulation.addEventListener("click", () => {
-//   fetch("data/data_context.json")
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       displayData(data, "context", "Context",'ccc','ddd');
-//     });
-// // });
-// btnManipulation.addEventListener("click", () => {
-//   fetch("data/auc_eer_dict.json")
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       displayData(data,'AUC','EER (%)');
-//     });
-// });
 
-// btnIncrOrder.addEventListener("click", () => {
-//   fetch("data/data_incr-order.json")
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       displayData(data, "method", "Method");
-//     });
-// });
 function toggleMetricsDisplay() {
   if (btnManipulation.checked) {
     metricsDiv.style.display = 'block';
@@ -378,17 +349,9 @@ function toggleMetricsDisplay() {
     // Notice1.style.display = 'none';
     metricsDiv.style.display = 'none';
   }
-  // if (btnUser.checked) {
-  //   Notice2.style.display = 'block'
-  // }
-  // else {
-  //   Notice2.style.display = 'none'
-  // }
-}
-// Initial check
+ 
 toggleMetricsDisplay();
 
-// Add event listeners to all radio buttons in the Overall group
 const overallRadios = document.querySelectorAll('#Overall input[name="btnradio"]');
 overallRadios.forEach(radio => {
   radio.addEventListener('change', toggleMetricsDisplay);

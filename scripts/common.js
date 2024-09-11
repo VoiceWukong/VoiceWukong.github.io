@@ -7,14 +7,7 @@ const btnFar = document.getElementById("falseacceptancerate");
 const btnFrr = document.getElementById("falserejectionrate");
 const btnUser = document.getElementById("userstudy");
 const Level = document.getElementById("Level");
-// const Notice1 = document.getElementById("notes1");
-// const Notice2 = document.getElementById("notes2");
-// const btnLevel0 = document.getElementById("level0");
-// const btnLevel1 = document.getElementById("level1");
-// const btnLevel2 = document.getElementById("level2");
-// console.log("JavaScript 文件已加载");
-// const btnIncrOrder = document.getElementById("incr-order");
-// 分别获取三个按钮元素
+
 btnMethod.checked = true;
 function flatten(data) {
   const results = [];
@@ -63,7 +56,6 @@ function flattenauc(data) {
         results.push(result);
       }
 
-      // result[key] = (score * 100).toFixed(1);
     }
   }
   return results;
@@ -90,7 +82,7 @@ function flattlevel(data) {
         results.push(result);
       }
 
-      // result[key] = (score * 100).toFixed(1);
+
     }
   }
   return results;
@@ -122,7 +114,6 @@ function flattenacc(data) {
         results.push(result);
       }
 
-      // result[key] = (score * 100).toFixed(1);
     }
   }
   return results;
