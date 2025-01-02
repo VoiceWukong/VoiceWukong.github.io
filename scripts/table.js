@@ -361,6 +361,10 @@ overallRadios.forEach(radio => {
 fetch("data/auc_eer_dict.json")
   .then((resp) => resp.json())
   .then((data) => {
+    var divToHide = document.getElementById('genMethodsdiv');
+    if (divToHide) {
+      divToHide.style.display = 'none'; // 隐藏div
+    }
     displayData(data, 'AUC', 'EER (%)');
   });
 
