@@ -10,9 +10,9 @@ async function displayData1(data, metric, metricName, metricName2) {
   [...document.querySelectorAll("[data-metric2]")].forEach(
     (el) => (el.innerHTML = metricName2)
   );
-  [...document.querySelectorAll("[data-metric3]")].forEach(
-    (el) => (el.innerHTML = metricName3)
-  );
+  // [...document.querySelectorAll("[data-metric3]")].forEach(
+  //   (el) => (el.innerHTML = metricName3)
+  // );
 
   function display(el, cols, sort_key) {
 
@@ -47,11 +47,11 @@ async function displayData1(data, metric, metricName, metricName2) {
     ["completion", "compilation_class_wise", "pass_class_wise"],
     "pass_class_wise"
   );
-  display(
-    tableChinese,
-    ["compilation_test_wise", "pass_test_wise"],
-    "pass_test_wise"
-  );
+  // display(
+  //   tableChinese,
+  //   ["compilation_test_wise", "pass_test_wise"],
+  //   "pass_test_wise"
+  // );
 }
 
 
@@ -227,7 +227,7 @@ async function displayDataacc(data, metric1, metric2, metricName, metricName2) {
         th.textContent = metricName2;
       }
 
-      if (i === 0 || i === 1) { 
+      if (i === 0 || i === 1) {
         const select = document.createElement("select");
         select.innerHTML = `<option value="">All</option>`;
 
@@ -350,7 +350,7 @@ function toggleMetricsDisplay() {
     metricsDiv.style.display = 'none';
   }
 }
- 
+
 toggleMetricsDisplay();
 
 const overallRadios = document.querySelectorAll('#Overall input[name="btnradio"]');

@@ -7,6 +7,7 @@ const btnFar = document.getElementById("falseacceptancerate");
 const btnFrr = document.getElementById("falserejectionrate");
 const btnUser = document.getElementById("userstudy");
 const Level = document.getElementById("Level");
+const genMethod = document.getElementById("genmethods");
 
 btnMethod.checked = true;
 function flatten(data) {
@@ -52,7 +53,7 @@ function flattenauc(data) {
         (r) => r.enauc === enauc && r.eneer === eneer && r.model === model && r.cneer === cneer && r.cnauc === cnauc
       );
       if (!result) {
-        result = { enauc,eneer,cneer,cnauc, model };
+        result = { enauc, eneer, cneer, cnauc, model };
         results.push(result);
       }
 
@@ -78,7 +79,7 @@ function flattlevel(data) {
       let result = results.find(
         (r) => r.enlevel === enlevel && r.zhlevel === zhlevel && r.enfar === enfar && r.zhfar === zhfar && r.model === model);
       if (!result) {
-        result = { enlevel,zhlevel,enfar,zhfar, model };
+        result = { enlevel, zhlevel, enfar, zhfar, model };
         results.push(result);
       }
 
@@ -110,7 +111,7 @@ function flattenacc(data) {
         (r) => r.enacc === enacc && r.enf1 === enf1 && r.enfar === enfar && r.enfrr === enfrr && r.cnacc === cnacc && r.cnf1 === cnf1 && r.cnfar === cnfar && r.cnfrr === cnfrr && r.model === model && r.variant === variant
       );
       if (!result) {
-        result = { enacc,enf1,enfar,enfrr,cnacc,cnf1,cnfar,cnfrr, model, variant };
+        result = { enacc, enf1, enfar, enfrr, cnacc, cnf1, cnfar, cnfrr, model, variant };
         results.push(result);
       }
 
