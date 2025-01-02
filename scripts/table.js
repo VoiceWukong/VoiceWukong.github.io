@@ -133,7 +133,7 @@ async function displayData(data, metricName, metricName2) {
   clearTable(tableChinese);
 
   display(tableEnglish, ["enauc", "eneer"], "enauc");
-  // display(tableChinese, ["cnauc", "cneer"], "cnauc");
+  display(tableChinese, ["cnauc", "cneer"], "cnauc");
 }
 
 
