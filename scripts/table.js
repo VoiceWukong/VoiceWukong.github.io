@@ -416,7 +416,7 @@ fetch("data/auc_eer_dict.json")
     displayData(data, 'AUC', 'EER (%)');
   });
 
-fetch("data/method.json.json")
+fetch("data/method_list.json")
   .then((resp) => resp.json())
   .then((data) => {
     displayGenmethods(data, 'Languages', 'FakeTypes', 'Commercial');
