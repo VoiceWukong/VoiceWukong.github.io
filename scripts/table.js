@@ -298,6 +298,10 @@ btnAcc.addEventListener("click", () => {
     .then((resp) => resp.json())
     .then((data) => {
       displayDataacc(data, CNACC, ENACC, "Variant", "ACC (%)");
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'block'; // 隐藏div
+      }
     });
 });
 const ENF1 = "enf1"
