@@ -1,6 +1,7 @@
 const tableEnglish = document.getElementById("english-result");
 const tableChinese = document.getElementById("chinese-result");
 
+
 async function displayData(data, metricName, metricName2) {
   const models = await fetch("models.json").then((resp) => resp.json());
   const flattened = flattenauc(data);
@@ -325,9 +326,98 @@ overallRadios.forEach(radio => {
 });
 
 
+async function displayGenmethods(data, metricName, metricName2, metricName3) {
+  const methods = await fetch("genmethods.json").then((resp) => resp.json());
+  const flattened = flattmethods(data);
+
+  [...document.querySelectorAll("[data-1]")].forEach(
+    (el) => (el.innerHTML = metricName)
+  );
+  [...document.querySelectorAll("[data-2]")].forEach(
+    (el) => (el.innerHTML = metricName2)
+  );
+  [...document.querySelectorAll("[data-3]")].forEach(
+    (el) => (el.innerHTML = metricName3)
+  );
+
+  function display(el, cols) {
+
+
+    const thead = el.querySelector("thead");
+    const tbody = el.querySelector("tbody");
+    thead.innerHTML = "";
+    tbody.innerHTML = "";
+
+
+    const headerRow = document.createElement("tr");
+    const thIndex = document.createElement("th");
+    thIndex.textContent = "Index";
+    headerRow.appendChild(thIndex);
+
+    for (const col of ["Method", ...cols]) {
+      const th = document.createElement("th");
+      if (col === "Method") {
+        th.textContent = "Methods";
+      } else if (col === "LA") {
+        th.textContent = metricName;
+      } else if (col === "FakeType") {
+        th.textContent = metricName2;
+      } else {
+        th.textContent = metricName3;
+      }
+      headerRow.appendChild(th);
+    }
+    thead.appendChild(headerRow);
+
+    for (const [index, row] of flattened.entries()) {
+      const tr = document.createElement("tr");
+      const tdIndex = document.createElement("td");
+      tdIndex.textContent = index + 1;
+      tr.appendChild(tdIndex);
+
+      for (const col of ["Method", ...cols]) {
+        const td = document.createElement("td");
+        if (col === "Method") {
+          const anchor = document.createElement("a");
+          const modelData = methods.find((m) => m.method === row.method);
+          if (modelData && modelData.link) {
+            anchor.href = modelData.link;
+            anchor.innerHTML = row.method;
+            td.appendChild(anchor);
+          } else {
+            td.innerHTML = row.method;
+            console.log(`No link found for method ${row.method}`);
+          }
+        } else {
+          td.innerHTML = row[col];
+        }
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  }
+
+  function clearTable(el) {
+    const thead = el.querySelector("thead");
+    const tbody = el.querySelector("tbody");
+    thead.innerHTML = "";
+    tbody.innerHTML = "";
+  }
+
+
+  clearTable(genlistTable);
+  display(genlistTable, ["LA", "FakeType", "Commercial"]);
+}
+
+
 fetch("data/auc_eer_dict.json")
   .then((resp) => resp.json())
   .then((data) => {
     displayData(data, 'AUC', 'EER (%)');
   });
 
+fetch("data/method.json.json")
+  .then((resp) => resp.json())
+  .then((data) => {
+    displayGenmethods(data, 'Languages', 'FakeTypes', 'Commercial');
+  });
