@@ -11,6 +11,7 @@ const btnGen = document.getElementById("genmethods");
 const genlistDiv = document.getElementById("gen_list")
 
 btnMethod.checked = true;
+
 function flatten(data) {
   const results = [];
   for (const [key, value] of Object.entries(data)) {

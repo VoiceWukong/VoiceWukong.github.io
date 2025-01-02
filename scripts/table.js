@@ -230,15 +230,15 @@ btnMethod.addEventListener("click", () => {
   fetch("data/auc_eer_dict.json ")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+      // var evarediv = document.getElementById('eva_result');
+      // if (evarediv) {
+      //   evarediv.style.display = 'block';
+      // }
       displayData(data, 'AUC', 'EER (%)');
       var genmethodsdiv = document.getElementById('genMethodsdiv');
-      if (genmethodsdiv) {
-        genmethodsdiv.style.display = 'none'; // 隐藏div
-      }
+      // if (genmethodsdiv) {
+      //   genmethodsdiv.style.display = 'none'; // 隐藏div
+      // }
     });
 });
 const ENACC = "enacc"
