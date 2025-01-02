@@ -358,9 +358,9 @@ async function displayGenmethods(data, metricName, metricName2, metricName3) {
       const th = document.createElement("th");
       if (col === "Method") {
         th.textContent = "Methods";
-      } else if (col === "LA") {
+      } else if (col === "la") {
         th.textContent = metricName;
-      } else if (col === "FakeType") {
+      } else if (col === "faketype") {
         th.textContent = metricName2;
       } else {
         th.textContent = metricName3;
@@ -406,7 +406,7 @@ async function displayGenmethods(data, metricName, metricName2, metricName3) {
 
 
   clearTable(genlistTable);
-  display(genlistTable, ["LA", "FakeType", "Commercial"]);
+  display(genlistTable, ["la", "faketype", "commercial"]);
 }
 
 
