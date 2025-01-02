@@ -284,10 +284,14 @@ btnMethod.addEventListener("click", () => {
   fetch("data/auc_eer_dict.json ")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayData(data, 'AUC', 'EER (%)');
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
+      var genmethodsdiv = document.getElementById('genMethodsdiv');
+      if (genmethodsdiv) {
+        genmethodsdiv.style.display = 'none'; // 隐藏div
       }
     });
 });
