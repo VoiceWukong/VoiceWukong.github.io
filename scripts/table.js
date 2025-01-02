@@ -285,6 +285,10 @@ btnMethod.addEventListener("click", () => {
     .then((resp) => resp.json())
     .then((data) => {
       displayData(data, 'AUC', 'EER (%)');
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'none'; // 隐藏div
+      }
     });
 });
 const ENACC = "enacc"
