@@ -22,10 +22,6 @@
       color: #000000;
     }
 
-    #genMethodsdiv {
-      display: none;
-    }
-
     #content {
       width: 75%;
     }
@@ -120,8 +116,7 @@
       <label class="btn btn-outline-primary" for="manipulation">Manipulation</label>
       <input type="radio" class="btn-check" name="btnradio" id="userstudy" />
       <label class="btn btn-outline-primary" for="userstudy">User Study</label>
-      <input type="radio" class="btn-check" name="btnradio" id="genmethods" />
-      <label class="btn btn-outline-primary" for="genmethods">Generation Methods</label>
+
 
 
     </div>
@@ -179,6 +174,11 @@
     <div class="container-fluid d-flex flex-row flex-nowrap" id="genMethodsdiv">
       <div class="container-fluid d-flex flex-column align-items-center">
         <label for="gen_list" class="text-success mb-3">Generation Methods</label>
+        <div id="gen note">
+          The list of generation methods. It includes 19 commercial tools and 15 open-source tools, among which 19
+          methods support Chinese deepfake voice generation. 29 are dedicated to Text-to-Speech (TTS) synthesis and 5
+          specialize in voice conversation (VC).
+        </div>
         <table id="gen_list"
           class="table table-responsive table-striped table-bordered flex-shrink-1 border border-success border-3">
           <thead>

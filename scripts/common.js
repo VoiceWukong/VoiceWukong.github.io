@@ -7,7 +7,6 @@ const btnFar = document.getElementById("falseacceptancerate");
 const btnFrr = document.getElementById("falserejectionrate");
 const btnUser = document.getElementById("userstudy");
 const Level = document.getElementById("Level");
-const btnGen = document.getElementById("genmethods");
 const genlistDiv = document.getElementById("gen_list")
 
 btnMethod.checked = true;

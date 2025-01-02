@@ -247,15 +247,9 @@ btnAcc.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+
       displayDataacc(data, CNACC, ENACC, "Variant", "ACC (%)");
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
-      }
+
     });
 });
 const ENF1 = "enf1"
@@ -265,15 +259,9 @@ btnFscore.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+
       displayDataacc(data, CNF1, ENF1, "Variant", "F1 Score (%)");
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
-      }
+
     });
 });
 
@@ -283,15 +271,9 @@ btnFar.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+
       displayDataacc(data, CNFAR, ENFAR, "Variant", "FAR (%)");
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
-      }
+
     });
 });
 const ENFRR = "enfrr"
@@ -300,15 +282,9 @@ btnFrr.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+
       displayDataacc(data, CNFRR, ENFRR, "Variant", "FRR (%)");
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
-      }
+
     });
 });
 const ZHFAR = "zhfar"
@@ -316,15 +292,9 @@ btnUser.addEventListener("click", () => {
   fetch("data/study_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
-      var evarediv = document.getElementById('eva_result');
-      if (evarediv) {
-        evarediv.style.display = 'block';
-      }
+
       displayDataacc(data, ZHFAR, ENFAR, "Level", "FAR (%)");
-      var divToHide = document.getElementById('genMethodsdiv');
-      if (divToHide) {
-        divToHide.style.display = 'none'; // 隐藏div
-      }
+
     });
 });
 
@@ -339,10 +309,7 @@ function toggleMetricsDisplay() {
       .then((data) => {
 
         displayDataacc(data, CNACC, ENACC, 'Variant', 'ACC (%)');
-        var divToHide = document.getElementById('genMethodsdiv');
-        if (divToHide) {
-          divToHide.style.display = 'none'; // 隐藏div
-        }
+
       });
   } else {
     // Notice1.style.display = 'none';
@@ -361,10 +328,6 @@ overallRadios.forEach(radio => {
 fetch("data/auc_eer_dict.json")
   .then((resp) => resp.json())
   .then((data) => {
-    var divToHide = document.getElementById('genMethodsdiv');
-    if (divToHide) {
-      divToHide.style.display = 'none'; // 隐藏div
-    }
     displayData(data, 'AUC', 'EER (%)');
   });
 
