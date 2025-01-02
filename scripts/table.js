@@ -358,9 +358,9 @@ overallRadios.forEach(radio => {
 });
 
 
-// fetch("data/auc_eer_dict.json")
-//   .then((resp) => resp.json())
-//   .then((data) => {
-//     displayData(data, 'AUC', 'EER (%)');
-//   });
+fetch("data/auc_eer_dict.json")
+  .then((resp) => resp.json())
+  .then((data) => {
+    displayData(data, 'AUC', 'EER (%)');
+  });
 
