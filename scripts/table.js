@@ -421,4 +421,4 @@ fetch("data/method_list.json")
   .then((data) => {
     displayGenmethods(data, 'Languages', 'FakeTypes', 'Commercial');
   });
-console.log(`Ok`);
+
