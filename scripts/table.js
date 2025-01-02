@@ -337,10 +337,7 @@ function toggleMetricsDisplay() {
     fetch("data/manipulation_dict.json")
       .then((resp) => resp.json())
       .then((data) => {
-        var evarediv = document.getElementById('eva_result');
-        if (evarediv) {
-          evarediv.style.display = 'block';
-        }
+
         displayDataacc(data, CNACC, ENACC, 'Variant', 'ACC (%)');
         var divToHide = document.getElementById('genMethodsdiv');
         if (divToHide) {
