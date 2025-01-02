@@ -1,58 +1,138 @@
 [
   {
-    "model": "AASIST",
-    "link": "https://github.com/clovaai/aasist.git"
+    "method": "XTTS_v2",
+    "link": "https://github.com/coqui-ai/TTS"
   },
   {
-    "model": "AASIST2",
-    "link": "https://github.com/TakHemlata/SSL_Anti-spoofing.git"
+    "method": "OpenVoice",
+    "link": "https://github.com/myshell-ai/OpenVoice"
   },
   {
-    "model": "RawNet2",
-    "link": "https://github.com/eurecom-asp/rawnet2-antispoofing.git"
+    "method": "Open-AI API",
+    "link": "https://platform.openai.com/docs/guides/text-to-speech"
   },
   {
-    "model": "RawNet2-Vocoder",
-    "link": "https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts.git"
+    "method": "Tortoise-TTS",
+    "link": "https://github.com/neonbjb/tortoise-tts"
   },
   {
-    "model": "RawBoost",
-    "link": "https://github.com/TakHemlata/RawBoost-antispoofing.git"
+    "method": "StyleTTS_v2",
+    "link": "https://github.com/yl4579/StyleTTS2?tab=readme-ov-file"
   },
   {
-    "model": "OC-Softmax",
-    "link": "https://github.com/yzyouzhang/AIR-ASVspoof.git"
+    "method": "VALL-E X",
+    "link": "https://github.com/Plachtaa/VALL-E-X"
   },
   {
-    "model": "Raw PC-DARTS",
-    "link": "https://github.com/eurecom-asp/raw-pc-darts-anti-spoofing.git"
+    "method": "Unmuxr",
+    "link": "https://app.unmixr.com/studio"
   },
   {
-    "model": "CLAD",
-    "link": "https://github.com/CLAD23/CLAD.git"
+    "method": "Elevenlabs",
+    "link": "https://elevenlabs.io/app/speech-synthesis"
   },
   {
-    "model": "RawGAT-ST",
-    "link": "https://github.com/eurecom-asp/RawGAT-ST-antispoofing.git"
+    "method": "Play",
+    "link": "https://play.ht/"
   },
   {
-    "model": "SAMO",
-    "link": "https://github.com/sivannavis/samo.git"
+    "method": "GPT-Sovits",
+    "link": "https://github.com/RVC-Boss/GPT-SoVITS"
   },
   {
-    "model": "Res-TSSDNet",
-    "link": "https://github.com/ghua-ac/end-to-end-synthetic-speech-detection.git"
+    "method": "Vits",
+    "link": "https://github.com/jaywalnut310/vits/tree/main"
   },
   {
-    "model": "RawBMamba",
-    "link": "https://github.com/cyjie429/RawBMamba.git"
+    "method": "VoiceMaker",
+    "link": "https://voicemaker.in/"
   },
   {
-    "model": "Human",
-    "link": "https://github.com/VoiceWukong/VoiceWukong/tree/main/Userstudy/result"
+    "method": "Voiser",
+    "link": "https://voiser.net/account/text-to-speech/"
   },
   {
-    "model": "Qwen-audio2",
-    "link": "http://qwenlm.github.io/blog/qwen2-audio/"
+    "method": "Textmagic",
+    "link": "https://freetools.textmagic.com/text-to-speech"
+  },
+  {
+    "method": "Bark",
+    "link": "https://github.com/suno-ai/bark?tab=readme-ov-file"
+  },
+  {
+    "method": "FreeTTS",
+    "link": "https://freetts.com/"
+  },
+  {
+    "method": "Voxify",
+    "link": "https://voxify.ai/"
+  },
+  {
+    "method": "AiVOOV",
+    "link": "https://aivoov.com/"
+  },
+  {
+    "method": "Speakperfect",
+    "link": "https://speakperfect.co/"
+  },
+  {
+    "method": "Diffgan-TTS",
+    "link": "https://github.com/keonlee9420/DiffGAN-TTS"
+  },
+  {
+    "method": "Fakeyou",
+    "link": "https://fakeyou.com/tts"
+  },
+  {
+    "method": "ChatTTS",
+    "link": "https://github.com/2noise/ChatTTS"
+  },
+  {
+    "method": "DDDM-VC",
+    "link": "https://github.com/hayeong0/DDDM-VC.git"
+  },
+  {
+    "method": "Diff-HierVC",
+    "link": "https://github.com/hayeong0/Diff-HierVC"
+  },
+  {
+    "method": "QuickVC",
+    "link": "https://github.com/quickvc/QuickVC-VoiceConversion"
+  },
+  {
+    "method": "StarGan_v2",
+    "link": "https://github.com/Ydoit/StarGANv2-VC"
+  },
+  {
+    "method": "RVC",
+    "link": "https://huggingface.co/lj1995/VoiceConversionWebUI"
+  },
+  {
+    "method": "Resemble-AI",
+    "link": "https://app.resemble.ai/"
+  },
+  {
+    "method": "TextToVoice",
+    "link": "https://www.texttovoice.online/"
+  },
+  {
+    "method": "AnyToSpeech",
+    "link": "https://anytospeech.com/"
+  },
+  {
+    "method": "Audyo",
+    "link": "https://www.audyo.ai/"
+  },
+  {
+    "method": "NaturalReader",
+    "link": "https://www.naturalreaders.com/online/"
+  },
+  {
+    "method": "Speechgen",
+    "link": "https://speechgen.io/"
+  },
+  {
+    "method": "Google API",
+    "link": "https://cloud.google.com/text-to-speech"
   }
 ]

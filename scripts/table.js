@@ -1,60 +1,6 @@
 const tableEnglish = document.getElementById("english-result");
 const tableChinese = document.getElementById("chinese-result");
 
-// async function displayData1(data, metric, metricName, metricName2) {
-//   const models = await fetch("models.json").then((resp) => resp.json());
-//   const flattened = flatten(data);
-//   [...document.querySelectorAll("[data-metric1]")].forEach(
-//     (el) => (el.innerHTML = metricName)
-//   );
-//   [...document.querySelectorAll("[data-metric2]")].forEach(
-//     (el) => (el.innerHTML = metricName2)
-//   );
-//   // [...document.querySelectorAll("[data-metric3]")].forEach(
-//   //   (el) => (el.innerHTML = metricName3)
-//   // );
-
-//   function display(el, cols, sort_key) {
-
-//     flattened.sort((a, b) => b[sort_key] - a[sort_key]);
-
-//     const tbody = el.querySelector("tbody");
-//     tbody.innerHTML = "";
-//     for (const [index, row] of flattened.entries()) {
-//       const tr = document.createElement("tr");
-//       const tdIndex = document.createElement("td");
-//       tdIndex.textContent = index + 1;
-//       tr.appendChild(tdIndex);
-
-//       for (const col of ["model", metric, ...cols]) {
-//         const td = document.createElement("td");
-//         if (col === "model") {
-//           const anchor = document.createElement("a");
-//           anchor.href = models.find((m) => m.model === row.model).link;
-//           anchor.innerHTML = row.model;
-//           td.appendChild(anchor);
-//         } else {
-//           td.innerHTML = row[col];
-//         }
-//         tr.appendChild(td);
-//       }
-//       tbody.appendChild(tr);
-//     }
-//   }
-
-//   display(
-//     tableEnglish,
-//     ["completion", "compilation_class_wise", "pass_class_wise"],
-//     "pass_class_wise"
-//   );
-//   // display(
-//   //   tableChinese,
-//   //   ["compilation_test_wise", "pass_test_wise"],
-//   //   "pass_test_wise"
-//   // );
-// }
-
-
 async function displayData(data, metricName, metricName2) {
   const models = await fetch("models.json").then((resp) => resp.json());
   const flattened = flattenauc(data);
@@ -301,10 +247,14 @@ btnAcc.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayDataacc(data, CNACC, ENACC, "Variant", "ACC (%)");
       var divToHide = document.getElementById('genMethodsdiv');
       if (divToHide) {
-        divToHide.style.display = 'block'; // 隐藏div
+        divToHide.style.display = 'none'; // 隐藏div
       }
     });
 });
@@ -315,7 +265,15 @@ btnFscore.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayDataacc(data, CNF1, ENF1, "Variant", "F1 Score (%)");
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'none'; // 隐藏div
+      }
     });
 });
 
@@ -325,7 +283,15 @@ btnFar.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayDataacc(data, CNFAR, ENFAR, "Variant", "FAR (%)");
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'none'; // 隐藏div
+      }
     });
 });
 const ENFRR = "enfrr"
@@ -334,7 +300,15 @@ btnFrr.addEventListener("click", () => {
   fetch("data/manipulation_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayDataacc(data, CNFRR, ENFRR, "Variant", "FRR (%)");
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'none'; // 隐藏div
+      }
     });
 });
 const ZHFAR = "zhfar"
@@ -342,7 +316,15 @@ btnUser.addEventListener("click", () => {
   fetch("data/study_dict.json")
     .then((resp) => resp.json())
     .then((data) => {
+      var evarediv = document.getElementById('eva_result');
+      if (evarediv) {
+        evarediv.style.display = 'block';
+      }
       displayDataacc(data, ZHFAR, ENFAR, "Level", "FAR (%)");
+      var divToHide = document.getElementById('genMethodsdiv');
+      if (divToHide) {
+        divToHide.style.display = 'none'; // 隐藏div
+      }
     });
 });
 
@@ -355,7 +337,15 @@ function toggleMetricsDisplay() {
     fetch("data/manipulation_dict.json")
       .then((resp) => resp.json())
       .then((data) => {
+        var evarediv = document.getElementById('eva_result');
+        if (evarediv) {
+          evarediv.style.display = 'block';
+        }
         displayDataacc(data, CNACC, ENACC, 'Variant', 'ACC (%)');
+        var divToHide = document.getElementById('genMethodsdiv');
+        if (divToHide) {
+          divToHide.style.display = 'none'; // 隐藏div
+        }
       });
   } else {
     // Notice1.style.display = 'none';
@@ -371,9 +361,9 @@ overallRadios.forEach(radio => {
 });
 
 
-fetch("data/auc_eer_dict.json")
-  .then((resp) => resp.json())
-  .then((data) => {
-    displayData(data, 'AUC', 'EER (%)');
-  });
+// fetch("data/auc_eer_dict.json")
+//   .then((resp) => resp.json())
+//   .then((data) => {
+//     displayData(data, 'AUC', 'EER (%)');
+//   });
 

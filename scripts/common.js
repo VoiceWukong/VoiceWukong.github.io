@@ -7,7 +7,8 @@ const btnFar = document.getElementById("falseacceptancerate");
 const btnFrr = document.getElementById("falserejectionrate");
 const btnUser = document.getElementById("userstudy");
 const Level = document.getElementById("Level");
-const genMethod = document.getElementById("genmethods");
+const btnGen = document.getElementById("genmethods");
+const genlistDiv = document.getElementById("gen_list")
 
 btnMethod.checked = true;
 function flatten(data) {
@@ -61,6 +62,7 @@ function flattenauc(data) {
   }
   return results;
 }
+
 
 
 
@@ -120,6 +122,28 @@ function flattenacc(data) {
   return results;
 }
 
+function flattmethods(data) {
+  const results = [];
+  for (const [key, value] of Object.entries(data)) {
+    for (const row of value) {
+      const {
+        Commercial: commercial,
+        FakeType: faketype,
+        LA: la,
+        Method: method,
+      } = row;
 
+      let result = results.find(
+        (r) => r.commercial === commercial && r.faketype === faketype && r.method === method && r.la === la
+      );
+      if (!result) {
+        result = { commercial, faketype, la, method };
+        results.push(result);
+      }
+
+    }
+  }
+  return results;
+}
 
 

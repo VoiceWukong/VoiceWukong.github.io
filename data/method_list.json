@@ -1,0 +1,208 @@
+{
+    "All": [
+        {
+            "Method": "XTTS_v2",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "OpenVoice",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Open-AI API",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Tortoise-TTS",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "StyleTTS_v2",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "VALL-E X",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Unmuxr",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Elevenlabs",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Play",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "GPT-Sovits",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Vits",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "VoiceMaker",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Voiser",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Textmagic",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Bark",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "FreeTTS",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Voxify",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "AiVOOV",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Speakperfect",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Diffgan-TTS",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Fakeyou",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "ChatTTS",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "No"
+        },
+        {
+            "Method": "DDDM-VC",
+            "LA": "EN",
+            "FakeType": "VC",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Diff-HierVC",
+            "LA": "EN",
+            "FakeType": "VC",
+            "Commercial": "No"
+        },
+        {
+            "Method": "QuickVC",
+            "LA": "EN",
+            "FakeType": "VC",
+            "Commercial": "No"
+        },
+        {
+            "Method": "StarGan_v2",
+            "LA": "EN & ZH",
+            "FakeType": "VC",
+            "Commercial": "No"
+        },
+        {
+            "Method": "RVC",
+            "LA": "EN & ZH",
+            "FakeType": "VC",
+            "Commercial": "No"
+        },
+        {
+            "Method": "Resemble-AI",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "TextToVoice",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "AnyToSpeech",
+            "LA": "EN",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Audyo",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "NaturalReader",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Speechgen",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        },
+        {
+            "Method": "Google API",
+            "LA": "EN & ZH",
+            "FakeType": "TTS",
+            "Commercial": "Yes"
+        }
+    ]
+}

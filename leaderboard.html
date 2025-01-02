@@ -121,35 +121,12 @@
       <input type="radio" class="btn-check" name="btnradio" id="userstudy" />
       <label class="btn btn-outline-primary" for="userstudy">User Study</label>
       <input type="radio" class="btn-check" name="btnradio" id="genmethods" />
-      <label class="btn btn-outline-primary" for="genmethods">Generate Methods</label>
+      <label class="btn btn-outline-primary" for="genmethods">Generation Methods</label>
 
 
     </div>
-    <!-- <div id="chart" style="width: 100%; height: 600px"></div> -->
-    <!-- <div id="notes1" style="display: none;">
-      <h3>📝 Note</h3>
-      <div class="inline-block mt-3">
-        In the Noise Injection (NI) operation, "G" represents gaussian,
-        "N" represents natural, "I" represents interior, "E" represents
-        exterior, "H" represents human, and "A" represents animal.
-        In the Fade In & Out (FD) operation, "LE" represents linear fade,
-        "E" represents exponential fade, and "LG" represents logarithmic fade.
-        For a detailed introduction to the manipulation subsets,
-        please refer to our
-        <a href="#">paper</a>.
-      </div>
-    </div> -->
-    <!-- <div id="notes2" style="display: none;">
-      <h3>📝 Note</h3>
-      <div class="inline-block mt-3">
-        Based on the results of our user study,
-        we categorized deepfake voices into three levels.
-        Level 0 represents the lowest level of deception to humans,
-        while Level 2 represents the highest level of deception to humans.
-        For details about the user study, please refer to our
-        <a href="#">paper</a>.
-      </div>
-    </div> -->
+
+
     <div class="btn-group" role="group" id="Metrics" style="display: none;">
       <input type="radio" class="btn-check" name="btnradio" id="accuracy" checked />
       <label class="btn btn-outline-primary" for="accuracy">Accuracy</label>
@@ -162,15 +139,6 @@
 
       <!-- > -->
     </div>
-    <!-- <div class="btn-group" role="group" id="Level" style="display: none;">
-        <input type="radio" class="btn-check" name="btnradio" id="level0" checked/>
-        <label class="btn btn-outline-primary" for="level0">Level0</label>
-        <input type="radio" class="btn-check" name="btnradio" id="level1" />
-        <label class="btn btn-outline-primary" for="level1">Level1</label>
-        <input type="radio" class="btn-check" name="btnradio" id="level2" />
-        <label class="btn btn-outline-primary" for="level2">Level2</label>
-        > -->
-    <!-- </div> -->
     <div class="container-fluid d-flex flex-row flex-nowrap" id="eva_result">
       <div class="container-fluid d-flex flex-column align-items-center">
         <label for="english-result" class="text-success mb-3">Result on English Dataset</label>
@@ -207,12 +175,29 @@
         <!-- <button id="generate-table" class="btn btn-primary mt-3">Generate Table</button> -->
       </div>
     </div>
-    <div id="genMethodsdiv">
-      <h3>🤗 Acknowledgement</h3>
-      Thanks for the
-      <a href="https://evalplus.github.io/leaderboard.html">EvalPlus</a> for
-      sharing the leaderboard template.
+
+    <div class="container-fluid d-flex flex-row flex-nowrap" id="genMethodsdiv">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <label for="gen_list" class="text-success mb-3">Generation Methods</label>
+        <table id="gen_list"
+          class="table table-responsive table-striped table-bordered flex-shrink-1 border border-success border-3">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Methods</th>
+              <th data-metric1></th>
+              <th data-metric2></th>
+              <th data-metric3></th>
+              <!-- <th data-metric3></th> -->
+              <!-- <th>Pass</th> -->
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
+
+
     <div id="notes">
       <h3>🤗 Acknowledgement</h3>
       Thanks for the
