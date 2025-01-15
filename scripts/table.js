@@ -238,7 +238,7 @@ btnMethod.addEventListener("click", () => {
       displayData(data, 'AUC', 'EER (%)');
       var genmethodsdiv = document.getElementById('genMethodsdiv');
       // if (genmethodsdiv) {
-      //   genmethodsdiv.style.display = 'none'; // 隐藏div
+      //   genmethodsdiv.style.display = 'none'; 
       // }
     });
 });
